@@ -110,7 +110,6 @@ body {
 .item-lista {
   flex-basis: 25%;
   background-color: #e2e8f0;
-  padding-bottom: 2rem;
 }
 
 .item-lista a {
@@ -136,6 +135,10 @@ body {
 
 .item-lista a h2 {
   font-size: 2rem;
+}
+
+.item-lista a p {
+  margin-bottom: 0.5rem;
 }
 
 /* #item-botao {
@@ -233,7 +236,7 @@ body {
 }
 
 .dark-theme #botao-filtro {
-  background-color: #ffffff;
+  background-color: #17801c;
   color: #0f172a;
 }
 
