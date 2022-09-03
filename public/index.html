@@ -4,93 +4,149 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styleindex.css" />
-    <title>NutrIMC</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Nutr.IMC</title>
   </head>
   <body>
-    <div id="cima">
-      <h1 id="logo">NutrIMC</h1>
-    </div>
-    <header>
-      <a href="">Home</a>
-      <a href="">IMC</a>
-    </header>
-    <div class="info">
-      <div id="corpo_humano">
-        <picture>
-          <img
-            src="img/corpo.png"
-            alt="foto do corpo humano"
-            id="corpohumano"
-          />
-        </picture>
-      </div>
-      <div id="lista">
-        <h2 id="lista_de_exercicios">Lista de Exercícios</h2>
-        <div id="lista_exercicios">
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Peito</h2>
-              <p>Exercícios para peito</p>
-            </div>
-          </a>
-
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Tríceps</h2>
-              <p>Exercícios para tríceps</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Bíceps</h2>
-              <p>Exercícios para bíceps</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Ombro</h2>
-              <p>Exercícios para ombro</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Costas</h2>
-              <p>Exercícios para costas</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Perna</h2>
-              <p>Exercícios para perna</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Glúteos</h2>
-              <p>Exercícios para glúteos</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Lombar</h2>
-              <p>Exercícios para lombar</p>
-            </div>
-          </a>
-          <a class="lk" href="">
-            <div class="musculos">
-              <h2>Abdomen</h2>
-              <p>Exercícios para abdomen</p>
-            </div>
-          </a>
+    <div class="container">
+      <header class="container-header">
+        <div class="logotipo">
+          <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
         </div>
-      </div>
+        <div class="menu">
+          <a href="">Início</a>
+          <a href="">Calculadora IMC</a>
+        </div>
+        <div class="container-toggle">
+          <input type="checkbox" id="toggle" />
+        </div>
+      </header>
+
+      <main class="container-main">
+        <aside class="container-aside">
+          <picture>
+            <img
+              src="../img/corpo.png"
+              alt="foto do corpo humano"
+              id="corpo-humano"
+            />
+          </picture>
+        </aside>
+        <section class="container-lista">
+          <h2 id="titulo-lista">Lista de Exercícios</h2>
+          <div class="container-filtro">
+            <select id="select-filtro" name="" id="">
+              <option selected="selected">Todas as categorias</option>
+              <option value="">Peito</option>
+              <option value="">Ombros</option>
+            </select>
+            <button id="botao-filtro">Filtrar</button>
+          </div>
+          <ul class="lista-exercicios">
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Peito</h2>
+                  <p>Exercícios para peito</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Tríceps</h2>
+                  <p>Exercícios para tríceps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Bíceps</h2>
+                  <p>Exercícios para bíceps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Ombro</h2>
+                  <p>Exercícios para ombro</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Costas</h2>
+                  <p>Exercícios para costas</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Perna</h2>
+                  <p>Exercícios para perna</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Glúteos</h2>
+                  <p>Exercícios para glúteos</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Lombar</h2>
+                  <p>Exercícios para lombar</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Abdomen</h2>
+                  <p>Exercícios para abdomen</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <div>&copy Todos direitos reservados.</div>
+      </footer>
     </div>
+    <script src="./js/main.js"></script>
   </body>
 </html>
