@@ -53,6 +53,11 @@ body {
   min-width: 33%;
 }
 
+.container-aside img {
+  position: sticky;
+  top: 0;
+}
+
 .container-lista {
   flex-grow: 3;
   display: flex;
