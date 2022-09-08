@@ -22,7 +22,11 @@
         </div>
         <div class="menu">
           <a href="">Início</a>
-          <a href="">Calculadora IMC</a>
+          <a
+            href="#"
+            onclick="alternarConteudo('form1', 'container-lista'); return false;"
+            >Calculadora IMC</a
+          >
         </div>
         <div class="container-toggle">
           <input type="checkbox" id="toggle" />
@@ -39,7 +43,20 @@
             />
           </picture>
         </aside>
-        <section class="container-lista">
+        <section>
+          <form id="form1" style="display: none">
+            <div>
+              <label>Altura</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Peso</label>
+              <input type="text" />
+            </div>
+          </form>
+        </section>
+
+        <section id="container-lista">
           <h2 id="titulo-lista">Lista de Exercícios</h2>
           <div class="container-filtro">
             <select id="select-filtro" name="" id="">
@@ -49,6 +66,7 @@
             </select>
             <button id="botao-filtro">Filtrar</button>
           </div>
+
           <ul class="lista-exercicios">
             <li class="item-lista">
               <a class="" href="">
@@ -143,8 +161,8 @@
         </section>
       </main>
 
-      <footer>
-        <div>&copy Todos direitos reservados.</div>
+      <footer class="container-footer">
+        <div>&copy Equipe <span>NutriIMC</span> Uninassau.</div>
       </footer>
     </div>
     <script src="./js/main.js"></script>

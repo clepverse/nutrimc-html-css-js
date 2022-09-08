@@ -21,3 +21,17 @@ botaoAlternar.addEventListener('change', () => {
     ? localStorage.setItem('dark', 'on')
     : localStorage.removeItem('dark');
 });
+
+function defaultForm(event) {
+  event.preventDefault();
+}
+
+document.querySelector('.form1').addEventListener('click', defaultForm, false);
+
+function alternarConteudo(form, lista) {
+  // Esconde o form
+  document.getElementById(form).style.display = 'block';
+
+  // Esconde a lista
+  document.getElementById(lista).style.display = 'none';
+}
