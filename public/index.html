@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <title>Nutr.IMC</title>
@@ -22,9 +19,7 @@
         </div>
         <div class="menu">
           <a href="">Início</a>
-          <a
-            href="#"
-            onclick="alternarConteudo('form1', 'container-lista'); return false;"
+          <a href="#" onclick="alternarConteudo('form1', 'container-lista'); return false;"
             >Calculadora IMC</a
           >
         </div>
@@ -36,23 +31,39 @@
       <main class="container-main">
         <aside class="container-aside">
           <picture>
-            <img
-              src="./img/corpo.png"
-              alt="foto do corpo humano"
-              id="corpo-humano"
-            />
+            <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano" />
           </picture>
         </aside>
         <section>
           <form id="form1" style="display: none">
-            <div>
+            <div class="">
+              <input
+                type="range"
+                min="100"
+                max="250"
+                value="100"
+                id="altura"
+                oninput="calcular()"
+              />
+              <span id="altura-valor">100 cm</span>
+            </div>
+            <div class="">
+              <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()" />
+              <span id="peso-valor">20 kg</span>
+            </div>
+            <div class="">
+              <p id="resultado"></p>
+              <p id="classificacao">Peso normal</p>
+            </div>
+
+            <!-- <div>
               <label>Altura</label>
               <input type="text" />
             </div>
             <div>
               <label>Peso</label>
               <input type="text" />
-            </div>
+            </div> -->
           </form>
         </section>
 
