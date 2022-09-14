@@ -58,7 +58,6 @@ body {
 }
 
 #container-lista {
-  flex-grow: 3;
   display: flex;
   flex-direction: column;
   margin-left: 10rem;
@@ -270,4 +269,51 @@ body {
 
 .dark-theme .item-texto {
   color: #e2e8f0;
+}
+
+@media screen and (max-width: 465px) {
+  .container-main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #container-lista{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-grow: 100%;
+    margin-left: 0em;
+  }
+
+  .lista-exercicios{
+    justify-content: center;
+    gap: 0;
+    flex-grow: 100%;
+  }
+
+  .item-lista{
+    margin-bottom: 20%;
+    flex-grow: 100%;
+    width: 100%;
+
+  }
+
+  .container-header{
+    display: block;
+  }
+
+  .logotipo{
+    margin: 5%;
+  }
+
+  #logo{
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  body {
+    background-color: #e2e8f0;
+  }
 }
