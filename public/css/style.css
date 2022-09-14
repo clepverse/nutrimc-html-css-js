@@ -57,7 +57,7 @@ body {
   top: 0;
 }
 
-.container-lista {
+#container-lista {
   flex-grow: 3;
   display: flex;
   flex-direction: column;
@@ -162,6 +162,21 @@ body {
   color: #0f172a;
   transition: all 0.5s;
 } */
+
+.container-footer {
+  text-align: center;
+  margin: 2rem 0 2rem 0;
+}
+
+.container-footer div {
+  font-size: 1.2rem;
+  color: #1e293b;
+}
+
+.container-footer div span {
+  color: #9f1239;
+  font-weight: bold;
+}
 
 .container-toggle {
   height: 20px;
