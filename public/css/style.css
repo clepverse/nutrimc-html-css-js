@@ -49,8 +49,12 @@ body {
   padding-right: 0;
   flex-grow: 1;
   text-align: center;
-  padding-bottom: 8rem;
   min-width: 33%;
+}
+
+.container-aside img {
+  position: sticky;
+  top: 0;
 }
 
 .container-lista {
