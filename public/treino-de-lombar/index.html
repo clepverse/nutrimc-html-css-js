@@ -4,10 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/main.css">
     <title>Alongamentos de lombar</title>
   </head>
   <body>
+    <div class="container">
+      <header class="container-header">
+        <div class="logotipo">
+          <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
+        </div>
+        <div class="menu">
+          <a href="">Início</a>
+          <a href="#" onclick="alternarConteudo('form1', 'container-lista'); return false;"
+            >Calculadora IMC</a
+          >
+        </div>
+        <div class="container-toggle">
+          <input type="checkbox" id="toggle" />
+        </div>
+      </header>
     <h2 class="title1">
       Os alongamentos para lombar, como os exercícios de abraçar a perna, ponte ou posição da
       serpente, ajudam a relaxar a musculatura, fortalecer os músculos das costas, pernas, quadris e
@@ -175,5 +192,11 @@
       repetir os movimentos no sentido contrário, para a direita, frente, esquerda e para trás.
       Repetir novamente o movimento nos dois sentidos por 2 vezes.
     </h2>
+    </div>
+    <footer class="container-footer">
+        <div>&copy Equipe <span>NutriIMC</span> Uninassau.</div>
+      </footer>
+    </div>
+    <script src="../js/main.js"></script>
   </body>
 </html>
