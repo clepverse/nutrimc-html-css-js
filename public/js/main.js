@@ -26,7 +26,7 @@ function defaultForm(event) {
   event.preventDefault();
 }
 
-document.querySelector('.form1').addEventListener('click', defaultForm, false);
+document.querySelector('.container-imccalc').addEventListener('click', defaultForm, false);
 
 function alternarConteudo(form, lista) {
   // Esconde o form
