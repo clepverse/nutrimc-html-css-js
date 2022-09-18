@@ -144,6 +144,32 @@ body {
   margin-bottom: 0.5rem;
 }
 
+#container-imccalc{
+  width: 70%;
+}
+#form1{
+  padding-left: 25%;
+  align-items: center;
+  
+}
+.painel-resultado{
+  width: 200px;
+  background-color: #e2e8f0;
+  text-align: center;
+  padding: 5rem;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+  border: 1px solid #334155;
+}
+
+.painel-input{
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2,90%);
+  align-items: center;
+  text-align: center;
+}
+
 /* #item-botao {
   border-radius: 10px;
   padding-top: 10px;

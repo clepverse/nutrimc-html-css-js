@@ -18,8 +18,8 @@
           <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
         </div>
         <div class="menu">
-          <a href="">Início</a>
-          <a href="#" onclick="alternarConteudo('form1', 'container-lista'); return false;"
+          <a href="">Lista de Exercícios</a>
+          <a href="#" onclick="alternarConteudo('container-imccalc', 'container-lista'); return false;"
             >Calculadora IMC</a
           >
         </div>
@@ -34,9 +34,14 @@
             <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano" />
           </picture>
         </aside>
-        <section>
-          <form id="form1" style="display: none">
-            <div class="">
+        <section id="container-imccalc" style="display: none">
+          <form id="form1" >
+            <div class="painel-resultado">
+              <p id="resultado">00.00</p>
+              <p id="classificacao">Peso normal</p>
+            </div>
+            <div class="painel-input">
+            <div>
               <input
                 type="range"
                 min="100"
@@ -45,16 +50,16 @@
                 id="altura"
                 oninput="calcular()"
               />
+              <br><br>
               <span id="altura-valor">100 cm</span>
             </div>
             <div class="">
               <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()" />
+              <br><br>
               <span id="peso-valor">20 kg</span>
             </div>
-            <div class="">
-              <p id="resultado"></p>
-              <p id="classificacao">Peso normal</p>
-            </div>
+          </div>
+            
 
             <!-- <div>
               <label>Altura</label>
