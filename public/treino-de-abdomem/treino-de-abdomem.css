@@ -18,22 +18,23 @@ img{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-b{
-    font-weight: bold;
+.bold{
+    font-weight: 600;
 }
 .texto{
     width: 660px;
 }
 
 .title1{
+    margin-top: 40px;
     margin-bottom: 30px;
     font-size: 25px;
     font-weight: bold;
     color: rgb(49, 47, 47);
 }
-p{
+.text1{
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     color:rgb(70, 70, 70);
 }
 .subtitle{
@@ -43,11 +44,13 @@ p{
     font-weight: bold;
 }
 
-h3{
+.title2{
+    color: rgb(49, 47, 47);
     margin-top: 13px;
     margin-bottom: 13px;
     color: rgb(39, 39, 39);
     font-weight: 600;
+    font-size: 20px;
 }
 
 li{
@@ -56,9 +59,6 @@ li{
     margin-bottom: 10px;
 }
 
-header{
-    margin-bottom: 40px;
-}
 .container{
     width: 100%;
 }
