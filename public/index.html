@@ -6,10 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
     <title>Nutr.IMC</title>
@@ -21,8 +18,10 @@
           <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
         </div>
         <div class="menu">
-          <a href="">Início</a>
-          <a href="">Calculadora IMC</a>
+          <a href="">Lista de Exercícios</a>
+          <a href="#" onclick="alternarConteudo('container-imccalc', 'container-lista'); return false;"
+            >Calculadora IMC</a
+          >
         </div>
         <div class="container-toggle">
           <input type="checkbox" id="toggle" />
@@ -32,14 +31,48 @@
       <main class="container-main">
         <aside class="container-aside">
           <picture>
-            <img
-              src="./img/corpo.png"
-              alt="foto do corpo humano"
-              id="corpo-humano"
-            />
+            <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano" />
           </picture>
         </aside>
-        <section class="container-lista">
+        <section id="container-imccalc" style="display: none">
+          <form id="form1" >
+            <div class="painel-resultado">
+              <p id="resultado">00.00</p>
+              <p id="classificacao">Peso normal</p>
+            </div>
+            <div class="painel-input">
+            <div>
+              <input
+                type="range"
+                min="100"
+                max="250"
+                value="100"
+                id="altura"
+                oninput="calcular()"
+              />
+              <br><br>
+              <span id="altura-valor">100 cm</span>
+            </div>
+            <div class="">
+              <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()" />
+              <br><br>
+              <span id="peso-valor">20 kg</span>
+            </div>
+          </div>
+            
+
+            <!-- <div>
+              <label>Altura</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Peso</label>
+              <input type="text" />
+            </div> -->
+          </form>
+        </section>
+
+        <section id="container-lista">
           <h2 id="titulo-lista">Lista de Exercícios</h2>
           <div class="container-filtro">
             <select id="select-filtro" name="" id="">
@@ -49,9 +82,10 @@
             </select>
             <button id="botao-filtro">Filtrar</button>
           </div>
+
           <ul class="lista-exercicios">
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-peito/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Peito</h2>
@@ -61,7 +95,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-triceps/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Tríceps</h2>
@@ -71,7 +105,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-biceps/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Bíceps</h2>
@@ -81,7 +115,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-ombro/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Ombro</h2>
@@ -91,7 +125,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-costas/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Costas</h2>
@@ -101,7 +135,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-perna/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Perna</h2>
@@ -111,7 +145,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-gluteo/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Glúteos</h2>
@@ -121,7 +155,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-lombar/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Lombar</h2>
@@ -131,7 +165,7 @@
             </li>
 
             <li class="item-lista">
-              <a class="" href="">
+              <a class="" href="./treino-de-abdomem/index.html">
                 <div class="imagem-preview"></div>
                 <div class="item-texto">
                   <h2>Abdomen</h2>
@@ -143,8 +177,8 @@
         </section>
       </main>
 
-      <footer>
-        <div>&copy Todos direitos reservados.</div>
+      <footer class="container-footer">
+        <div>&copy Equipe <span>NutriIMC</span> Uninassau.</div>
       </footer>
     </div>
     <script src="./js/main.js"></script>
