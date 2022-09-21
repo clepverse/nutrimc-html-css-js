@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Nutr.IMC</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="container-header">
+        <div class="logotipo">
+          <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
+        </div>
+        <div class="menu">
+          <a href="">Lista de Exercícios</a>
+          <a
+            href="#"
+            onclick="alternarConteudo('container-imccalc', 'container-lista'); return false;"
+            >Calculadora IMC</a
+          >
+        </div>
+        <div class="container-toggle">
+          <input type="checkbox" id="toggle" />
+        </div>
+      </header>
+
+      <main class="container-main">
+        <aside class="container-aside">
+          <picture>
+            <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano" />
+          </picture>
+        </aside>
+        <section id="container-imccalc" style="display: none">
+          <form id="form1">
+            <div class="painel-resultado">
+              <p id="resultado">00.00</p>
+              <p id="classificacao">Peso normal</p>
+            </div>
+            <div class="painel-input">
+              <div>
+                <input
+                  type="range"
+                  min="100"
+                  max="250"
+                  value="100"
+                  id="altura"
+                  oninput="calcular()"
+                />
+                <br /><br />
+                <span id="altura-valor">100 cm</span>
+              </div>
+              <div class="">
+                <input type="range" min="20" max="200" value="20" id="peso" oninput="calcular()" />
+                <br /><br />
+                <span id="peso-valor">20 kg</span>
+              </div>
+            </div>
+
+            <!-- <div>
+              <label>Altura</label>
+              <input type="text" />
+            </div>
+            <div>
+              <label>Peso</label>
+              <input type="text" />
+            </div> -->
+          </form>
+        </section>
+
+        <section id="container-lista">
+          <h2 id="titulo-lista">Lista de Exercícios</h2>
+          <div class="container-filtro">
+            <select id="select-filtro" name="" id="">
+              <option selected="selected">Todas as categorias</option>
+              <option value="">Peito</option>
+              <option value="">Ombros</option>
+            </select>
+            <button id="botao-filtro">Filtrar</button>
+          </div>
+
+          <ul class="lista-exercicios">
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-peito.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Peito</h2>
+                  <p>Exercícios para peito</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-triceps.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Tríceps</h2>
+                  <p>Exercícios para tríceps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-biceps.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Bíceps</h2>
+                  <p>Exercícios para bíceps</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-ombros.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Ombros</h2>
+                  <p>Exercícios para ombros</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-costas.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Costas</h2>
+                  <p>Exercícios para costas</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-pernas.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Pernas</h2>
+                  <p>Exercícios para pernas</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-gluteos.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Glúteos</h2>
+                  <p>Exercícios para glúteos</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-lombar.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Lombar</h2>
+                  <p>Exercícios para lombar</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="item-lista">
+              <a class="" href="./exercicios/treino-de-abdomen.html">
+                <div class="imagem-preview"></div>
+                <div class="item-texto">
+                  <h2>Abdomen</h2>
+                  <p>Exercícios para abdomen</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer class="container-footer">
+        <div>&copy Equipe <span>NutriIMC</span> Uninassau.</div>
+      </footer>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
