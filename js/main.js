@@ -22,12 +22,6 @@ botaoAlternar.addEventListener('change', () => {
     : localStorage.removeItem('dark');
 });
 
-function defaultForm(event) {
-  event.preventDefault();
-}
-
-document.querySelector('.container-imccalc').addEventListener('click', defaultForm, false);
-
 function alternarConteudo(form, lista) {
   // Esconde o form
   document.getElementById(form).style.display = 'block';
@@ -50,7 +44,7 @@ function calcular() {
 
   if (imc < 18.5) {
     classificacao = 'Abaixo do peso';
-    resultado.style.color = 'yellow';
+    resultado.style.color = '#713f12';
   } else if (imc <= 24.9) {
     classificacao = 'Peso normal';
     resultado.style.color = 'green';
@@ -69,4 +63,23 @@ function calcular() {
   }
 
   document.getElementById('classificacao').textContent = classificacao;
+}
+
+document.querySelector('#entrada-pesquisa').addEventListener('input', filtroLista);
+
+function filtroLista() {
+  const entradaPesquisa = document.querySelector('#entrada-pesquisa');
+  const filter = entradaPesquisa.value.toLowerCase();
+
+  const listaItems = document.querySelectorAll('.item-lista');
+
+  listaItems.forEach((item) => {
+    let text = item.textContent;
+
+    if (text.toLowerCase().includes(filter.toLowerCase())) {
+      item.style.display = '';
+    } else {
+      item.style.display = 'none';
+    }
+  });
 }
