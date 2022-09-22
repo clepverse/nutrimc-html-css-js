@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <script src="https://kit.fontawesome.com/6c32633a00.js" crossorigin="anonymous"></script>
     <title>Nutr.IMC</title>
   </head>
   <body>
@@ -18,9 +19,14 @@
           <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
         </div>
         <div class="menu">
-          <a href="">Lista de Exercícios</a>
           <a
-            href="#"
+            href=""
+            onclick="alternarConteudo( 'container-lista', 'container-imccalc'); return false;"
+            >Lista de Exercícios</a
+          >
+
+          <a
+            href=""
             onclick="alternarConteudo('container-imccalc', 'container-lista'); return false;"
             >Calculadora IMC</a
           >
@@ -61,27 +67,24 @@
                 <span id="peso-valor">20 kg</span>
               </div>
             </div>
-
-            <!-- <div>
-              <label>Altura</label>
-              <input type="text" />
-            </div>
-            <div>
-              <label>Peso</label>
-              <input type="text" />
-            </div> -->
           </form>
         </section>
 
         <section id="container-lista">
           <h2 id="titulo-lista">Lista de Exercícios</h2>
-          <div class="container-filtro">
+          <!-- <div class="container-filtro">
             <select id="select-filtro" name="" id="">
               <option selected="selected">Todas as categorias</option>
               <option value="">Peito</option>
               <option value="">Ombros</option>
             </select>
             <button id="botao-filtro">Filtrar</button>
+          </div> -->
+
+          <div class="container-pesquisa">
+            <input type="text" placeholder="Procure por um músculo" id="entrada-pesquisa" />
+
+            <i class="fa-solid fa-magnifying-glass"></i>
           </div>
 
           <ul class="lista-exercicios">

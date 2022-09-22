@@ -15,6 +15,7 @@ body {
   background-color: #e2e8f0;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  transition: all 0.5s;
 }
 
 .logotipo {
@@ -62,6 +63,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 10rem;
+  width: 100%;
 }
 
 #titulo-lista {
@@ -72,7 +74,7 @@ body {
   color: #1e293b;
 }
 
-.container-filtro {
+/* .container-filtro {
   margin-bottom: 2.5rem;
 }
 
@@ -102,6 +104,34 @@ body {
   background-color: #94a3b8;
   color: #0f172a;
   transition: all 0.5s;
+} */
+
+.container-pesquisa {
+  background: #e2e8f0;
+  height: 30px;
+  border-radius: 40px;
+  padding: 10px;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.container-pesquisa i {
+  color: #334155;
+}
+
+#entrada-pesquisa {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: #0f172a;
+  font-size: 16px;
+  transition: all 0.5s;
+  line-height: 40px;
 }
 
 .lista-exercicios {
@@ -114,6 +144,11 @@ body {
 .item-lista {
   flex-basis: 25%;
   background-color: #e2e8f0;
+  transition: all 0.5s;
+}
+
+.item-lista:hover {
+  transform: scale(1.1);
 }
 
 .item-lista a {
@@ -275,7 +310,7 @@ body {
   color: #e2e8f0;
 }
 
-.dark-theme #select-filtro {
+/* .dark-theme #select-filtro {
   background-color: #e2e8f0;
 }
 
@@ -287,6 +322,17 @@ body {
 .dark-theme #botao-filtro:hover {
   background-color: #94a3b8;
   transition: all 0.5s;
+} */
+.dark-theme .container-pesquisa {
+  background: #2f3640;
+}
+
+.dark-theme .container-pesquisa i {
+  color: #f1f5f9;
+}
+
+.dark-theme #entrada-pesquisa {
+  color: #f8fafc;
 }
 
 .dark-theme .item-lista {
@@ -295,6 +341,10 @@ body {
 
 .dark-theme .item-texto {
   color: #e2e8f0;
+}
+
+.dark-theme .container-footer div {
+  color: #ffffff;
 }
 
 .dark-theme .title1,
