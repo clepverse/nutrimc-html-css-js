@@ -4,8 +4,74 @@ body {
 }
 
 .container {
+  width: 100%;
   font-family: 'Roboto', sans-serif;
 }
+
+/* Páginas dos exercícios */
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-sharp {
+  color: #9f1239;
+  font-size: 2.5rem;
+  position: sticky;
+  top: 110px;
+  transform: translate(-100px);
+}
+
+.dark-theme .fa-sharp {
+  color: #9f1239;
+}
+
+.bold {
+  font-weight: 600;
+}
+.texto {
+  width: 660px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.title1 {
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(49, 47, 47);
+}
+.text1 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: rgb(70, 70, 70);
+}
+.subtitle {
+  margin-bottom: 10px;
+  margin-top: 20px;
+  color: rgb(39, 39, 39);
+  font-weight: bold;
+}
+
+.title2 {
+  color: rgb(49, 47, 47);
+  margin-top: 13px;
+  margin-bottom: 13px;
+  color: rgb(39, 39, 39);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+li {
+  margin-top: 13px;
+  margin-bottom: 10px;
+}
+/* Fim Páginas dos exercícios */
 
 .container-header {
   display: flex;
