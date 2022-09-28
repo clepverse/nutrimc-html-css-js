@@ -15,7 +15,9 @@ body {
   width: 100%;
   align-items: center;
 }
-img {
+.fotos {
+  width: 100%;
+  height: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -36,7 +38,8 @@ img {
   font-weight: 600;
 }
 .texto {
-  width: 660px;
+  text-align: justify;
+  max-width: 660px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -135,6 +138,7 @@ li {
 }
 
 .container-aside img {
+  
   position: sticky;
   top: 0;
   
@@ -458,6 +462,7 @@ li {
 }
 @media screen and (max-width: 940px) {
 
+
   .menu{
     display:flex;
 
@@ -480,8 +485,8 @@ li {
 @media screen and (max-width:788px) and (min-width: 721px){
 
   .imagem-preview {
-    width: 250px;
-    height: 100px;
+    min-width: 250px;
+    min-height: 100px;
     background-color: #1e40af;
     
   }
@@ -690,6 +695,23 @@ li {
   #logo {
     text-align: center;
   }
+}
+
+@media screen and (max-width: 679px) {
+
+    .texto{
+      width: 70%;
+  }
+
+  .fa-sharp{
+    transform: translate(0);
+    position: static;
+  }
+
+  .title1{
+    margin-top: 20px;
+  }
+
 }
 
 }
