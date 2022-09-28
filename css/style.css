@@ -16,18 +16,25 @@ body {
   align-items: center;
 }
 .fotos {
-  width: 100%;
+  margin:auto;
+  width: 50%;
   height: 100%;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.fa-link::before{
+ content: "";
+  
+}
 .fa-sharp {
   color: #9f1239;
   font-size: 2.5rem;
   position: sticky;
   top: 110px;
-  transform: translate(-100px);
+  margin-top: 1rem;
+  margin-bottom:1rem;
+  transform: translate(47vw);
 }
 
 .dark-theme .fa-sharp {
@@ -38,9 +45,28 @@ body {
   font-weight: 600;
 }
 .texto {
+  
+  display:flex;
+  flex-direction: column;
   text-align: justify;
-  max-width: 660px;
+  justify-content: center;
   font-family: 'Roboto', sans-serif;
+}
+.texto p {
+  width:50%;
+  margin:auto;
+}
+.texto h1{
+  margin-left:24%;
+  margin-right:8rem;
+}
+.texto h3{
+  margin-left:24%;
+  margin-right:8rem;
+}
+.texto h4{
+  margin-left:24%;
+  margin-right:8rem;
 }
 
 .title1 {
@@ -276,28 +302,61 @@ li {
 }
 
 #container-imccalc {
-  width: 70%;
+  width: 100%;
 }
 #form1 {
-  padding-left: 25%;
-  align-items: center;
+  display:flex;
+  height:100%;
+  width: 100%;
+  margin:auto;
+  justify-content: center;
+  flex-direction: column;
+
 }
+/*AQUELA UL QUE JEAN FEZ*/
+
+.lista1{
+  list-style-type:disc;
+  padding:2rem;
+  
+  display:flex;
+  width:65%;
+  justify-content: center;
+  text-align: justify;
+  flex-direction: column;
+  margin:auto;
+
+}
+/*______________________*/
 .painel-resultado {
-  width: 200px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20rem;
+  height:5rem;
   background-color: #e2e8f0;
-  text-align: center;
-  padding: 5rem;
-  margin-top: 5rem;
-  margin-bottom: 3rem;
+  align-items: center;
+  
+  margin:auto;
+  margin-bottom:1rem;
+  
   border: 1px solid #334155;
 }
 
+
 .painel-input {
-  width: 200px;
-  display: grid;
-  grid-template-columns: repeat(2, 90%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   text-align: center;
+  margin-bottom:auto;
+  
+}
+
+.painel-input div{
+
+  margin:1rem;
 }
 
 /* #item-botao {
@@ -319,8 +378,11 @@ li {
 } */
 
 .container-footer {
-  text-align: center;
-  margin: 2rem 0 2rem 0;
+  height:6rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:auto;
 }
 
 .container-footer div {
@@ -505,6 +567,42 @@ li {
 }
 
 @media screen and (max-width: 720px) {
+  .fotos {
+    margin:auto;
+    width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .texto p {
+    width:70%;
+    margin:auto;
+  }
+  .texto h1{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h3{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h4{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  
+
+  #titulo-lista{
+    text-align: center;
+  }
+  .container-pesquisa{
+    margin: auto;
+    margin-bottom:6rem;
+  }
+
+  #container-lista h2{
+    margin-right:0;
+  }
  
   .menu:nth-child(2){
     margin-right:25px;
@@ -555,6 +653,7 @@ li {
   .container-aside img {
     position: sticky;
     top: 0;
+
     
   }
   
@@ -598,7 +697,29 @@ li {
   }
 
 @media screen and (max-width: 660px) {
-
+  .fotos {
+    margin:auto;
+    width: 70%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .texto p {
+    width:70%;
+    margin:auto;
+  }
+  .texto h1{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h3{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h4{
+    margin-left:14%;
+    margin-right:8rem;
+  }
   
   .container-main {
     flex-direction: column;
@@ -648,6 +769,46 @@ li {
 }
 
 @media screen and (max-width: 430px) {
+  .fotos {
+    margin:auto;
+    width: 80%;
+    height: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .texto p {
+    width:80%;
+    margin:auto;
+  }
+  .texto h1{
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h3{
+
+    margin-left:14%;
+    margin-right:8rem;
+  }
+  .texto h4{
+    word-spacing: 1%;
+    margin-left:9%;
+    margin-right:8rem;
+  }
+  
+  .div-input input{
+    width: 9rem;
+  }
+  .container-footer{
+    margin:auto;
+    
+  }
+  .container-aside img {
+    position: sticky;
+    top: 0;
+    
+    
+    
+  }
 
   
   .container-main {
@@ -698,15 +859,8 @@ li {
 }
 
 @media screen and (max-width: 679px) {
+  
 
-    .texto{
-      width: 70%;
-  }
-
-  .fa-sharp{
-    transform: translate(0);
-    position: static;
-  }
 
   .title1{
     margin-top: 20px;
