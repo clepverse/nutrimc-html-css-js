@@ -417,6 +417,10 @@ li {
   background-color: #334155;
 }
 
+.dark-theme .div-input {
+  color: #ffffff;
+}
+
 .dark-theme .item-texto {
   color: #e2e8f0;
 }
