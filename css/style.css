@@ -150,8 +150,7 @@ li {
   padding-right: 0;
   flex-grow: 1;
   text-align: center;
-  width: 35%;
-  min-width: 300px;
+  min-width: 33%;
 }
 
 .container-aside img {
