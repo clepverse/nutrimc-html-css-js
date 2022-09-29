@@ -22,6 +22,19 @@ botaoAlternar.addEventListener('change', () => {
     : localStorage.removeItem('dark');
 });
 
+var activeLista = document.getElementById('a-lista');
+var activeCalculadora = document.getElementById('a-calculadora');
+
+activeLista.addEventListener('click', () => {
+  activeLista.style.color = '#9f1239';
+  activeCalculadora.style.color = '#475569';
+});
+
+activeCalculadora.addEventListener('click', () => {
+  activeCalculadora.style.color = '#9f1239';
+  activeLista.style.color = '#475569';
+});
+
 function alternarConteudo(form, lista) {
   // Esconde o form
   document.getElementById(form).style.display = 'block';
