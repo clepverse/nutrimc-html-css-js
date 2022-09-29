@@ -19,19 +19,19 @@
           <h1 id="logo">Nutr<span id="ponto">.</span>IMC</h1>
         </div>
         <div class="menu">
-          
           <a
+            id="a-lista"
             href=""
             onclick="alternarConteudo( 'container-lista', 'container-imccalc'); return false;"
             >Lista de Exercícios</a
           >
 
           <a
+            id="a-calculadora"
             href=""
             onclick="alternarConteudo('container-imccalc', 'container-lista'); return false;"
             >Calculadora IMC</a
           >
-
         </div>
         <div class="container-toggle">
           <input type="checkbox" id="toggle" />
@@ -41,7 +41,7 @@
       <main class="container-main">
         <aside class="container-aside">
           <picture>
-            <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano"/>
+            <img src="./img/corpo.png" alt="foto do corpo humano" id="corpo-humano" />
           </picture>
         </aside>
         <section id="container-imccalc" style="display: none">
@@ -74,15 +74,6 @@
 
         <section id="container-lista">
           <h2 id="titulo-lista">Lista de Exercícios</h2>
-          <!-- <div class="container-filtro">
-            <select id="select-filtro" name="" id="">
-              <option selected="selected">Todas as categorias</option>
-              <option value="">Peito</option>
-              <option value="">Ombros</option>
-            </select>
-            <button id="botao-filtro">Filtrar</button>
-          </div> -->
-
           <div class="container-pesquisa">
             <input type="text" placeholder="Procure por um músculo" id="entrada-pesquisa" />
 
